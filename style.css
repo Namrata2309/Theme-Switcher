@@ -98,7 +98,7 @@ ul li{
 
 .img{
     height: 100%; 
-    display:none;
+    
     
 }
 .img img{
@@ -145,6 +145,12 @@ ul li{
         align-items:center;
         justify-content:center;
     }
+    .img img{
+    height: 80%;
+    margin-top: 10%; 
+    transform:none;  
+    transition: none;
+}
     nav ul{
         display:none;
     }
@@ -173,6 +179,7 @@ ul li{
     .girl{
         position:absolute;
         left:0;
+        top:auto;
     }
     #btn{
        width:50%;
