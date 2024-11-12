@@ -1,0 +1,180 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+:root{
+    --primary-color:#f1f1f1;
+    --secondary-color:#212121;
+    
+}
+.dark-theme{
+    --primary-color:#212121;
+    --secondary-color:#f1f1f1;
+}
+body{
+    background: var(--primary-color);
+
+}
+.container{
+    height: 100vh;
+    width: 100vw;
+}
+.nav{
+    height: 7%;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 1%;
+    
+
+}
+nav{
+    width: 50%;
+    height: 100%; 
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+   
+}
+nav ul{
+    width: 100%;
+    display: flex;
+    justify-content: right;
+    
+}
+ul li{
+   margin: 3%;
+   list-style: none;
+   color: var(--secondary-color);
+   font-weight: 400;
+}
+#logo{
+    height: 100%;
+    color:rgb(217, 87, 7);
+
+}
+#moon{
+    height:50%;
+}
+.about{
+   
+    height: 93%;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+.text{
+    
+    width: 40%;
+    text-align: left;
+   
+}
+.text h1{
+    margin: 2%;
+    font-size: 8vh;
+    color:var(--secondary-color)
+}
+.text span{
+    color: rgb(217, 87, 7);
+}
+.text p{
+    margin-left: 2%;
+}
+#btn{
+    margin: 2%;
+    width: 20%;
+    padding: 1% 0;
+    border-radius: 5px;
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    cursor: pointer;
+    
+}
+
+.img{
+    height: 100%; 
+    
+}
+.img img{
+    height: 80%;
+    margin-top: 10%; 
+    transform: translateX(-50%);  
+    transition: bottom 1s, left 1s;
+}
+.pattern {
+    position: relative;
+    transform: translateY(0);  
+    transition: transform 0.5s ease; 
+}
+
+.img:hover .pattern{
+    bottom: 40px;
+}
+.img:hover .girl{
+    left:54%;
+}
+.girl{
+    position: absolute;
+    top: 0;
+    left: 67%;
+}
+@media(max-width:786px){
+    .nav ul{
+       margin-right:2% 
+    }
+    .girl{
+        position:absolute;
+        left:50%;
+    }
+    nav li{
+       font-size:small
+    }
+}
+@media(max-width:480px){
+    .container{
+        width:100%;
+        height:100vh;
+        display:flex;
+        flex-direction:column;
+        align-items:center;
+        justify-content:center;
+    }
+    nav ul{
+        display:none;
+    }
+    .nav{
+        width:100%;
+        display:flex;
+        justify-content:space-around;
+    }
+    #moon{
+        margin-left:100%;
+    }
+    .about{
+        display:flex;
+        flex-direction:column
+    }
+    .pattern{
+        width:100%;
+        position:relative
+
+    }
+    .text{
+        width:100%;
+        margin:5%;
+        margin-left:5%;
+    }
+    .girl{
+        position:absolute;
+        left:0;
+    }
+    #btn{
+       width:50%;
+        padding:3% 0;
+    }
+}
