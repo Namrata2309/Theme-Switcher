@@ -98,6 +98,7 @@ ul li{
 
 .img{
     height: 100%; 
+    display:none;
     
 }
 .img img{
